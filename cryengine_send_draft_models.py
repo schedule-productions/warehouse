@@ -4,14 +4,6 @@ import os
 import shutil
 import configuration
 
-if os.path.exists(configuration.cryengineDirectory):
-    for (dirpath, dirnames, filenames) in os.walk("models"):
-        if "mark_for_cryengine_draft.txt" in filenames:
-            sendTestModel(os.sep.join(dirpath.split(os.sep)[1:]))
-
-else:
-    input("\nCryengine directory is wrong!  Change it in 'configuration.py'.\n")
-
 def sendTestModel(modelPath):
     testPath = os.path.join(configuration.cryengineDirectory, "objects", "_warehouse", "_test")
 
@@ -23,4 +15,21 @@ def sendTestModel(modelPath):
 
     shutil.copytree(os.path.join("models", modelPath), os.path.join(testPath, modelPath))
 
-    input("\nCopied draft model to Cryengine!\n")
+    input("\nCopied draft model '%s' to Cryengine!\n" % modelPath)
+
+once = False
+if os.path.exists(configuration.cryengineDirectory):
+    for (dirpath, dirnames, filenames) in os.walk("models"):
+        if "mark_for_cryengine_draft.txt" in filenames:
+            once = True
+            sendTestModel(os.sep.join(dirpath.split(os.sep)[1:]))
+
+    if not once:
+        input("\nNo marks found.  Copy the mark " + \
+              "'utilities/mark_for_cryengine_draft.txt' to any " + \
+              "model folder you wish to test.\n")
+
+else:
+    input("\nCryengine directory is wrong!  Change it in 'configuration.py'.\n")
+
+
