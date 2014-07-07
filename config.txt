@@ -1,0 +1,1 @@
+cryengineDirectory = "D:/Cryengine/GameSDK"

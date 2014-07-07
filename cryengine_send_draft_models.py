@@ -30,6 +30,6 @@ if os.path.exists(configuration.cryengineDirectory):
               "model folder you wish to test.\n")
 
 else:
-    input("\nCryengine directory is wrong!  Change it in 'configuration.py'.\n")
+    input("\nCryengine directory is wrong!  Change it in 'config.txt'.\n")
 
 

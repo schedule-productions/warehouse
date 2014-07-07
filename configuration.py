@@ -2,4 +2,4 @@ from os import path
 
 #--------------------------------------------
 
-cryengineDirectory = "D:/Cryengine/GameSDK"
+exec(open("config.txt", "r").read())

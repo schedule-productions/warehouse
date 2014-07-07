@@ -22,7 +22,7 @@ def main():
         input("\nCopied all marked models to the Cryengine game directory!\n")
         
     else:
-        input("\nCryengine game directory is incorrect!  Change it in 'configuration.py'.\n")
+        input("\nCryengine game directory is incorrect!  Change it in 'config.txt'.\n")
 
 def checkFiletype(modelpath, extension):
     name = os.path.split(modelpath)[-1]

@@ -50,7 +50,7 @@ Using Cryengine Models
 > If you wish to use any of the models in a Cryengine project there are some quick changes you must make.  
 > `meta.txt` will say whether a given model is Cryengine compatible.
 
-1. Set your cryengine directory by editing `configuration.py` and changing the appropriate variable.  
+1. Set your cryengine directory by editing `config.txt` and changing the appropriate variable.  
 2. Copy `utilities/mark_for_cryengine.txt` to any model folders that you want in your cryengine game directory.  
 3. Run `cryengine_library_tool.py` to copy all of the models over.
 

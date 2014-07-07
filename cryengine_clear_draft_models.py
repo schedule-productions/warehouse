@@ -14,4 +14,4 @@ if os.path.exists(configuration.cryengineDirectory):
         input("\nGame directory already cleared.\n")
 
 else:
-    input("\nCryengine directory is wrong!  Change it in 'configuration.py'.\n")
+    input("\nCryengine directory is wrong!  Change it in 'config.txt'.\n")
