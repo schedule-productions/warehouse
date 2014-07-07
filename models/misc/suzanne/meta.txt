@@ -1,0 +1,5 @@
+%name%Suzanne
+%dataname%suzanne
+%path%misc%suzanne
+%tags%monkey%suzanne%default%test%trophy%figure%figurine
+%attributes%cryengine#True
