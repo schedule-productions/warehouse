@@ -19,7 +19,22 @@ if os.path.exists(configuration.cryengineDirectory):
         if os.path.exists(retrieveDirectory):
             shutil.rmtree(retrieveDirectory)
         shutil.copytree(os.path.join(testPath, modelPath), retrieveDirectory)
-        input("\nRetrieved finished draft model from Cryengine game directory!\n")
+        print("\nRetrieved finished draft model from Cryengine game directory!")
+        materialFilename = os.path.join(retrieveDirectory, os.path.basename(modelPath) + ".mtl")
+        if os.path.exists(materialFilename):
+            materialFile = open(materialFilename, "r")
+            materialData = materialFile.read()
+            materialFile.close()
+
+            materialData = materialData.replace("_warehouse/_test/", "_warehouse/")
+            materialFile = open(materialFilename, "w")
+            materialFile.write(materialData)
+            materialFile.close()
+
+            input(" -> Fixed material texture links.\n")
+        else:
+            input(" -> Could not retrieve material file to fix.\n")
+        
     else:
         input("\nNo test model at that location!\n")
 
