@@ -30,8 +30,9 @@ Development Guideline
 (*only necessary for models to use in Cryengine)
 
 -----------------
-Data Structure
+File Structure
 -----------------
-
-> :open_file_folder: octocat
-> > :gift: octocat.blend
+> :open_file_folder: models
+> > :open_file_folder: misc
+> > > :open_file_folder: octocat
+> > > > :gift: octocat.blend
