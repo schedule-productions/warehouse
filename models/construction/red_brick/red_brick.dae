@@ -1,0 +1,274 @@
+<?xml version="1.0" ?>
+<collada version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>CryENGINE exporter for Blenderv2.69 (sub 0) by angjminer, extended by Duo Oratar</authoring_tool>
+    </contributor>
+    <created/>
+    <modified/>
+    <unit meter="1" name="meter"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras/>
+  <library_lights/>
+  <library_images>
+    <image id="texture_brick.png" name="texture_brick.png">
+      <init_from>texture_brick.png</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="red_brick__2__proxy__physProxyNoDraw_fx">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0.0 0.0 0.0 1.0</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">1.0 1.0 1.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.800000011920929 0.800000011920929 0.800000011920929 1.0</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">1.0 1.0 1.0 1.0</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="red_brick__1__brick__physNone_fx">
+      <profile_COMMON>
+        <newparam sid="texture_brick.png-surface">
+          <surface type="2D">
+            <init_from>texture_brick.png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="texture_brick.png-sampler">
+          <sampler2D>
+            <source>texture_brick.png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0.0 0.0 0.0 1.0</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">1.0 1.0 1.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <texture texture="texture_brick.png-sampler"/>
+            </diffuse>
+            <specular>
+              <color sid="specular">1.0 1.0 1.0 1.0</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">22</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1.0</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="red_brick__2__proxy__physProxyNoDraw" name="red_brick__2__proxy__physProxyNoDraw">
+      <instance_effect url="#red_brick__2__proxy__physProxyNoDraw_fx"/>
+    </material>
+    <material id="red_brick__1__brick__physNone" name="red_brick__1__brick__physNone">
+      <instance_effect url="#red_brick__1__brick__physNone_fx"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Proxy">
+      <mesh>
+        <source id="Proxy-positions">
+          <float_array count="24" id="Proxy-positions-array">-0.152528 -0.0822891 -0.035573 -0.152528 0.0822891 -0.035573 0.152528 0.0822891 -0.035573 0.152528 -0.0822891 -0.035573 -0.152528 -0.0822891 0.035573 -0.152528 0.0822891 0.035573 0.152528 0.0822891 0.035573 0.152528 -0.0822891 0.035573</float_array>
+          <technique_common>
+            <accessor count="8" source="#Proxy-positions-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Proxy-normals">
+          <float_array count="18" id="Proxy-normals-array">-1.000000 0.000000 -0.000000 0.000000 1.000000 -0.000000 1.000000 0.000000 -0.000000 0.000000 -1.000000 -0.000000 -0.000000 0.000000 -1.000000 -0.000000 0.000000 1.000000 </float_array>
+          <technique_common>
+            <accessor count="6" source="Proxy-normals-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Proxy-UVMap-0">
+          <float_array count="48" id="Proxy-UVMap-0-array">0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 </float_array>
+          <technique_common>
+            <accessor count="24" source="#Proxy-UVMap-0-array" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source/>
+        <vertices id="Proxy-vertices">
+          <input semantic="POSITION" source="#Proxy-positions"/>
+        </vertices>
+        <polylist count="6" material="red_brick__2__proxy__physProxyNoDraw">
+          <input offset="0" semantic="VERTEX" source="#Proxy-vertices"/>
+          <input offset="1" semantic="NORMAL" source="#Proxy-normals"/>
+          <input offset="2" semantic="TEXCOORD" set="0" source="#Proxy-UVMap-0"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>1 0 0 0 0 1 4 0 2 5 0 3 5 1 4 6 1 5 2 1 6 1 1 7 6 2 8 7 2 9 3 2 10 2 2 11 0 3 12 3 3 13 7 3 14 4 3 15 0 4 16 1 4 17 2 4 18 3 4 19 7 5 20 6 5 21 5 5 22 4 5 23 </p>
+        </polylist>
+        <extra>
+          <technique profile="MAYA">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </mesh>
+    </geometry>
+    <geometry id="Brick">
+      <mesh>
+        <source id="Brick-positions">
+          <float_array count="72" id="Brick-positions-array">0.145950 0.0788955 -0.029982 0.150000 0.0748454 -0.029982 0.145950 0.0748455 -0.034032 0.145950 -0.0748455 -0.034032 0.150000 -0.0748455 -0.029982 0.145950 -0.0788955 -0.029982 -0.145950 -0.0748455 -0.034032 -0.145950 -0.0788955 -0.029982 -0.150000 -0.0748455 -0.029982 -0.150000 0.0748455 -0.029982 -0.145950 0.0788955 -0.029982 -0.145950 0.0748455 -0.034032 0.150000 0.0748454 0.029982 0.145950 0.0788954 0.029982 0.145950 0.0748454 0.034032 0.145950 -0.0748455 0.034032 0.145950 -0.0788955 0.029982 0.150000 -0.0748455 0.029982 -0.145950 -0.0748455 0.034032 -0.150000 -0.0748455 0.029982 -0.145950 -0.0788955 0.029982 -0.145950 0.0788955 0.029982 -0.150000 0.0748455 0.029982 -0.145950 0.0748455 0.034032</float_array>
+          <technique_common>
+            <accessor count="24" source="#Brick-positions-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Brick-normals">
+          <float_array count="288" id="Brick-normals-array">0.341563 0.875576 0.341563 0.341563 0.875576 -0.341563 -0.341563 0.875576 -0.341563 -0.341563 0.875576 0.341563 0.341563 -0.875576 -0.341563 0.341563 -0.875576 0.341563 -0.341563 -0.875576 0.341563 -0.341563 -0.875576 -0.341563 -0.875576 -0.341563 -0.341563 -0.875576 -0.341563 0.341563 -0.875576 0.341563 0.341563 -0.875576 0.341563 -0.341563 0.341563 0.341563 0.875576 -0.341563 0.341563 0.875576 -0.341563 -0.341563 0.875576 0.341563 -0.341563 0.875576 0.875576 0.341563 -0.341563 0.875576 0.341563 0.341563 0.875576 -0.341563 0.341563 0.875576 -0.341563 -0.341563 0.341563 0.875576 -0.341563 0.875576 0.341563 -0.341563 0.341563 0.341563 -0.875576 0.341563 -0.341563 -0.875576 0.875576 -0.341563 -0.341563 0.341563 -0.875576 -0.341563 -0.341563 -0.341563 -0.875576 -0.341563 -0.875576 -0.341563 -0.875576 -0.341563 -0.341563 -0.875576 0.341563 -0.341563 -0.341563 0.875576 -0.341563 -0.341563 0.341563 -0.875576 0.875576 0.341563 0.341563 0.341563 0.875576 0.341563 0.341563 0.341563 0.875576 0.341563 -0.341563 0.875576 0.341563 -0.875576 0.341563 0.875576 -0.341563 0.341563 -0.341563 -0.341563 0.875576 -0.875576 -0.341563 0.341563 -0.341563 -0.875576 0.341563 -0.341563 0.875576 0.341563 -0.875576 0.341563 0.341563 -0.341563 0.341563 0.875576 0.875576 0.341563 -0.341563 0.875576 -0.341563 -0.341563 0.341563 -0.341563 -0.875576 0.341563 0.341563 -0.875576 -0.341563 0.875576 -0.341563 0.341563 0.875576 -0.341563 0.341563 0.341563 -0.875576 -0.341563 0.341563 -0.875576 0.341563 0.875576 -0.341563 0.341563 0.875576 0.341563 0.875576 0.341563 0.341563 0.875576 0.341563 -0.341563 0.341563 -0.875576 -0.341563 -0.341563 -0.875576 -0.341563 -0.341563 -0.341563 -0.875576 0.341563 -0.341563 -0.875576 0.875576 -0.341563 -0.341563 0.875576 -0.341563 0.341563 0.341563 -0.875576 0.341563 0.341563 -0.875576 -0.341563 -0.875576 -0.341563 -0.341563 -0.875576 0.341563 -0.341563 -0.341563 0.341563 -0.875576 -0.341563 -0.341563 -0.875576 -0.341563 -0.875576 -0.341563 -0.341563 -0.875576 0.341563 -0.875576 -0.341563 0.341563 -0.875576 -0.341563 -0.341563 -0.875576 0.341563 -0.341563 -0.875576 0.341563 0.341563 -0.341563 0.875576 0.341563 -0.341563 0.875576 -0.341563 0.341563 0.341563 0.875576 0.341563 -0.341563 0.875576 0.875576 -0.341563 0.341563 0.875576 0.341563 0.341563 0.341563 0.875576 0.341563 -0.341563 0.875576 0.341563 -0.341563 0.341563 0.875576 0.341563 0.341563 0.875576 0.341563 -0.341563 0.875576 -0.341563 -0.341563 0.875576 -0.341563 -0.875576 0.341563 0.341563 -0.875576 0.341563 -0.341563 -0.341563 0.875576 -0.341563 0.341563 0.875576 -0.875576 0.341563 0.341563 -0.875576 -0.341563 0.341563 0.341563 0.341563 -0.875576 0.341563 -0.341563 -0.875576 -0.341563 -0.341563 -0.875576 -0.341563 0.341563 -0.875576 </float_array>
+          <technique_common>
+            <accessor count="96" source="Brick-normals-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Brick-UVMap-0">
+          <float_array count="192" id="Brick-UVMap-0-array">1.540668 0.986485 1.540668 0.672004 0.009790 0.672004 0.009790 0.986485 1.540668 0.672004 1.540668 0.986485 0.009790 0.986485 0.009790 0.672004 1.431606 0.672004 1.431606 0.986485 2.216664 0.986485 2.216664 0.672004 1.540668 0.697321 0.009790 0.697321 0.009790 -0.087737 1.540668 -0.087738 1.167758 0.672004 1.167758 0.986485 0.382700 0.986485 0.382700 0.672004 1.188998 0.672004 1.167758 0.672004 1.167758 0.650764 1.540668 0.961168 1.561908 0.961168 1.540668 0.939928 1.431606 0.650764 1.410365 0.672004 1.431606 0.672004 1.167758 0.672004 1.188998 0.672004 1.167758 0.650764 1.037456 0.697321 1.016216 0.718561 1.016216 0.697321 1.431605 1.007725 1.410365 0.986485 1.431605 0.986485 1.431606 1.007725 1.431606 0.986485 1.410365 0.986485 1.188998 0.986485 1.167758 0.986485 1.167758 1.007725 1.167758 0.672004 0.382700 0.672004 0.382700 0.650764 1.167758 0.650764 0.009790 0.718561 1.540668 0.718561 1.540668 0.697321 0.009790 0.697321 1.188998 0.672004 1.188998 0.986485 1.167758 0.986485 1.167758 0.672004 1.540668 0.939928 0.009790 0.939928 0.009790 0.961168 1.540668 0.961168 1.431606 0.672004 1.431605 0.986485 1.410365 0.986485 1.410365 0.672004 1.431606 0.672004 2.216664 0.672004 2.216664 0.650764 1.431606 0.650764 1.410365 0.672004 1.410365 0.986485 1.431606 0.986485 1.431606 0.672004 1.167758 0.672004 1.167758 0.986485 1.188998 0.986485 1.188998 0.672004 1.167758 1.007725 0.382700 1.007725 0.382700 0.986485 1.167758 0.986485 1.540668 0.718561 0.009790 0.718561 0.009790 0.697321 1.540668 0.697321 1.540668 0.961168 0.009790 0.961168 0.009790 0.939928 1.540668 0.939928 1.431606 1.007725 2.216664 1.007725 2.216664 0.986485 1.431606 0.986485 1.540668 0.697321 1.540668 -0.087737 0.009790 -0.087737 0.009790 0.697321 </float_array>
+          <technique_common>
+            <accessor count="96" source="#Brick-UVMap-0-array" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source/>
+        <vertices id="Brick-vertices">
+          <input semantic="POSITION" source="#Brick-positions"/>
+        </vertices>
+        <polylist count="26" material="red_brick__1__brick__physNone">
+          <input offset="0" semantic="VERTEX" source="#Brick-vertices"/>
+          <input offset="1" semantic="NORMAL" source="#Brick-normals"/>
+          <input offset="2" semantic="TEXCOORD" set="0" source="#Brick-UVMap-0"/>
+          <vcount>4 4 4 4 4 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 </vcount>
+          <p>13 13 0 0 0 1 10 10 2 21 21 3 5 5 4 16 16 5 20 20 6 7 7 7 8 8 8 19 19 9 22 22 10 9 9 11 14 14 12 23 23 13 18 18 14 15 15 15 1 1 16 12 12 17 17 17 18 4 4 19 0 0 20 1 1 21 2 2 22 3 3 23 4 4 24 5 5 25 6 6 26 7 7 27 8 8 28 9 9 29 10 10 30 11 11 31 12 12 32 13 13 33 14 14 34 15 15 35 16 16 36 17 17 37 18 18 38 19 19 39 20 20 40 21 21 41 22 22 42 23 23 43 1 1 44 4 4 45 3 3 46 2 2 47 10 10 48 0 0 49 2 2 50 11 11 51 0 0 52 13 13 53 12 12 54 1 1 55 5 5 56 7 7 57 6 6 58 3 3 59 4 4 60 17 17 61 16 16 62 5 5 63 8 8 64 9 9 65 11 11 66 6 6 67 7 7 68 20 20 69 19 19 70 8 8 71 9 9 72 22 22 73 21 21 74 10 10 75 14 14 76 15 15 77 17 17 78 12 12 79 13 13 80 21 21 81 23 23 82 14 14 83 15 15 84 18 18 85 20 20 86 16 16 87 18 18 88 23 23 89 22 22 90 19 19 91 2 2 92 3 3 93 6 6 94 11 11 95 </p>
+        </polylist>
+        <extra>
+          <technique profile="MAYA">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_animation_clips/>
+  <library_animations/>
+  <library_visual_scenes>
+    <visual_scene id="scene" name="scene">
+      <node id="CryExportNode_red_brick">
+        <node id="Brick">
+          <translate sid="translation">0.0000 0.0000 0.0000</translate>
+          <rotate sid="rotation_Z">0 0 1 0.0</rotate>
+          <rotate sid="rotation_Y">0 1 0 0.0</rotate>
+          <rotate sid="rotation_X">1 0 0 0.0</rotate>
+          <scale sid="scale">1.0 1.0 1.0</scale>
+          <instance_geometry url="#Brick">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="red_brick__1__brick__physNone" target="#red_brick__1__brick__physNone">
+                  <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="UVMap"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+          <extra>
+            <technique profile="CryEngine">
+              <properties/>
+            </technique>
+          </extra>
+        </node>
+        <node id="Proxy">
+          <translate sid="translation">0.0000 0.0000 0.0000</translate>
+          <rotate sid="rotation_Z">0 0 1 0.0</rotate>
+          <rotate sid="rotation_Y">0 1 0 0.0</rotate>
+          <rotate sid="rotation_X">1 0 0 0.0</rotate>
+          <scale sid="scale">1.0 1.0 1.0</scale>
+          <instance_geometry url="#Proxy">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="red_brick__2__proxy__physProxyNoDraw" target="#red_brick__2__proxy__physProxyNoDraw">
+                  <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="UVMap"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+          <extra>
+            <technique profile="CryEngine">
+              <properties/>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="CryEngine">
+            <properties>
+              fileType=cgf
+              DoNotMerge
+            </properties>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#scene"/>
+  </scene>
+</collada>
