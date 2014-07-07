@@ -17,12 +17,18 @@ Development Guideline
 8.	Adjust for CryBlend*
 9.	Export Cryengine files*
 10.	Use python to create metadata
-11.	Send draft model using `cryengine_send_test_model.py`*
-12.	Finalize draft model in Cryengine SDK*
-13.	Retrieve draft model using `cryengine_retrieve_test_model.py`*
-14.	Replace with files from `_retrieve` folder and delete `_retrieve` folder*
 
 (*only necessary for models to use in Cryengine)
+
+----------------------------------------
+Finalizing and Testing Cryengine Models
+----------------------------------------
+> After doing the steps above, do the following to finalize the model:  
+1.	Mark models to draft by copying `utilities/mark_for_cryengine_draft.txt` to model folders  
+2.	Send draft models to game directory using `cryengine_send_draft_models.py`  
+3.	Finalize draft models in Cryengine SDK  
+4.	Retrieve draft models using `cryengine_retrieve_draft_models.py`  
+5.	Finalized model files are in `_retrieve` folder of each model folder.  
 
 -----------------
 File Structure

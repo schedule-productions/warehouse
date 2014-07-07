@@ -17,9 +17,14 @@ def main():
     gameDirectory = configuration.cryengineDirectory
 
     if os.path.exists(gameDirectory):
+        if not paths:
+            input("\nNo marks found.  Copy the mark " + \
+              "'utilities/mark_for_cryengine.txt' to any " + \
+              "model folder you wish to copy to the cryengine directory.\n")
         for modelpath in paths:
             copyModel(modelpath)
-        input("\nCopied all marked models to the Cryengine game directory!\n")
+        if paths:
+            input("\nCopied all marked models to the Cryengine game directory!\n")
         
     else:
         input("\nCryengine game directory is incorrect!  Change it in 'config.txt'.\n")
