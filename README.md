@@ -24,6 +24,7 @@ Development Guideline
 Finalizing and Testing Cryengine Models
 ----------------------------------------
 > After doing the steps above, do the following to finalize the model:  
+
 1.	Mark models to draft by copying `utilities/mark_for_cryengine_draft.txt` to model folders  
 2.	Send draft models to game directory using `cryengine_send_draft_models.py`  
 3.	Finalize draft models in Cryengine SDK  
