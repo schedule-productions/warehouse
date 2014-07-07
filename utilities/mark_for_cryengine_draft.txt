@@ -1,3 +1,3 @@
-Just copy this file anywhere to a model folder and run 'cryengine_send_test_models' to copy the models to the testing folder in the cryengine game directory.  You will recieve an error unless you change your cryengine game directory in 'configuration.py'
+Just copy this file anywhere to a model folder and run 'cryengine_send_draft_models' to copy the models to the testing folder in the cryengine game directory.  You will recieve an error unless you change your cryengine game directory in 'configuration.py'
 
-This file will persist in the model folder until the draft model is recieved using 'cryengine_retrieve_test_models.py'.
+This file will persist in the model folder until the draft model is recieved using 'cryengine_retrieve_draft_models.py'.
