@@ -15,8 +15,10 @@ if os.path.exists(configuration.cryengineDirectory):
     testPath = os.path.join(configuration.cryengineDirectory, "objects", "_warehouse", "_test")
 
     if os.path.exists(os.path.join(testPath, modelPath)):
-        shutil.rmtree(os.path.join("models", modelPath, "_retrieved"))
-        shutil.copytree(os.path.join(testPath, modelPath), os.path.join("models", modelPath, "_retrieved"))
+        retrieveDirectory = os.path.join("models", modelPath, "_retrieved")
+        if os.path.exists(retrieveDirectory):
+            shutil.rmtree(retrieveDirectory)
+        shutil.copytree(os.path.join(testPath, modelPath), retrieveDirectory)
         input("\nRetrieved finished draft model from Cryengine game directory!\n")
     else:
         input("\nNo test model at that location!\n")
