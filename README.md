@@ -27,25 +27,25 @@ File Structure
 > :open_file_folder: 	models
 > > :open_file_folder: 		misc
 > > > :open_file_folder: 		octocat  
-> > > > :gift: 				octocat.blend  
-> > > > :gift:				octocat_cryengine.blend  
-> > > > :triangular_ruler:		octocat.stl  
-> > > > :camera: 			texture_body.png  
-> > > > :camera: 			texture_eyes.png  
-> > > > :globe_with_meridians: 		octocat.x  
-> > > > :mag:		 		preview.png  
-> > > > :page_facing_up:		octocat.cgf  
-> > > > :page_facing_up:		octocat.mtl  
-> > > > :page_facing_up:		octocat.dae  
-> > > > :memo:				meta.txt  
-> > > > :large_orange_diamond: mark_for_cryengine.txt
+> > > > :gift: 				          octocat.blend  
+> > > > :gift:				          octocat_cryengine.blend  
+> > > > :triangular_ruler:		  octocat.stl  
+> > > > :camera: 			          texture_body.png  
+> > > > :camera: 			          texture_eyes.png  
+> > > > :globe_with_meridians: 	octocat.x  
+> > > > :mag:		 		            preview.png  
+> > > > :page_facing_up:		    octocat.cgf  
+> > > > :page_facing_up:		    octocat.mtl  
+> > > > :page_facing_up:		    octocat.dae  
+> > > > :memo:				          meta.txt  
+> > > > :large_orange_diamond:  mark_for_cryengine.txt
 
 -----------------------
 Using Cryengine Models
 -----------------------
 
->If you wish to use any of the models in a Cryengine project there are some quick changes you must make.  
->`meta.txt` will say whether a given model is Cryengine compatible.
+> If you wish to use any of the models in a Cryengine project there are some quick changes you must make.  
+> `meta.txt` will say whether a given model is Cryengine compatible.
 
 1. Set your cryengine directory by editing `configuration.py` and changing the appropriate variable.  
 2. Copy `mark_for_cryengine.txt` to any model folders that you want in your cryengine game directory.  
