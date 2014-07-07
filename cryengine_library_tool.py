@@ -70,5 +70,7 @@ def copyModel(modelpath):
         if file.endswith(".dds") and file.startswith("texture_"):
             copyTexture(modelpath, file)
 
+    os.remove(os.path.join(modelpath, "mark_for_cryengine.txt"))
+
 if __name__ == "__main__":
     main()
