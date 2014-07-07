@@ -3,9 +3,9 @@ warehouse
 
 3D models created by the schedule-productions team
 
-=====================
+----------------------
 Development Guideline
-=====================
+-----------------------
 
 1.	Model geometry
 
@@ -29,10 +29,9 @@ Development Guideline
 
 (*only necessary for models to use in Cryengine)
 
-================
+-----------------
 Data Structure
-================
+-----------------
 
-:open_file_folder: octocat
-  :gift: octocat.blend
-  :
+> :open_file_folder: octocat
+> > :gift: octocat.blend
