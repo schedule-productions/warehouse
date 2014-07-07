@@ -1,0 +1,5 @@
+%name%Cube
+%dataname%cube
+%path%misc%cube
+%tags%test%default%cube
+%attributes%cryengine#True
