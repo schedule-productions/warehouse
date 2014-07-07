@@ -34,17 +34,17 @@ File Structure
 -----------------
 > :open_file_folder: 	models
 > > :open_file_folder: 		misc
-> > > :open_file_folder: 		octocat
-> > > > :gift: 				octocat.blend
-> > > > :gift:				octocat_cryengine.blend
-> > > > :triangular_ruler:		octocat.stl
-> > > > :camera: 			texture_body.png
-> > > > :camera: 			texture_eyes.png
-> > > > :globe_with_meridians: 		octocat.x
-> > > > :mag:		 		preview.pnp
-> > > > :page_facing_up:		octocat.cgf
-> > > > :page_facing_up:		octocat.mtl
-> > > > :page_facing_up:		octocat.dae
-> > > > :page_facing_up:		octocat.dae
-> > > > :memo:				meta.txt
+> > > :open_file_folder: 		octocat  
+> > > > :gift: 				octocat.blend  
+> > > > :gift:				octocat_cryengine.blend  
+> > > > :triangular_ruler:		octocat.stl  
+> > > > :camera: 			texture_body.png  
+> > > > :camera: 			texture_eyes.png  
+> > > > :globe_with_meridians: 		octocat.x  
+> > > > :mag:		 		preview.pnp  
+> > > > :page_facing_up:		octocat.cgf  
+> > > > :page_facing_up:		octocat.mtl  
+> > > > :page_facing_up:		octocat.dae  
+> > > > :page_facing_up:		octocat.dae  
+> > > > :memo:				meta.txt  
 
