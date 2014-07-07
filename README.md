@@ -45,6 +45,5 @@ File Structure
 > > > > :page_facing_up:		octocat.cgf  
 > > > > :page_facing_up:		octocat.mtl  
 > > > > :page_facing_up:		octocat.dae  
-> > > > :page_facing_up:		octocat.dae  
 > > > > :memo:				meta.txt  
 
