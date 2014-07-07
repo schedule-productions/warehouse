@@ -27,4 +27,5 @@ Development Guideline
 
 10.	Use python to create metadata
 
+(*only necessary for models to use in Cryengine)
 ========================================
