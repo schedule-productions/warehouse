@@ -31,8 +31,9 @@ def checkFiletype(modelpath, extension):
 def copyFile(modelpath, extension):
     name = os.path.split(modelpath)[-1]
     shortmodelpath = os.sep.join(modelpath.split(os.sep)[1:])
+    categoryPath = os.path.split(shortmodelpath)[0]
 
-    copyto = os.path.join(gameDirectory, "objects", "_warehouse", shortmodelpath)
+    copyto = os.path.join(gameDirectory, "objects", "_warehouse", categoryPath)
     if not os.path.exists(copyto):
         os.makedirs(copyto)
         
@@ -59,7 +60,9 @@ def copyTexture(modelpath, filename):
         ))
 
 def copyModel(modelpath):
-    name = os.path.split(modelpath)[-1]
+    name = os.path.split(modelpath)[1]
+    categoryPath = os.path.split(modelpath)[0]
+    
     filetypes = ["cgf", "mtl"]
     for filetype in filetypes:
         if checkFiletype(modelpath, filetype):
