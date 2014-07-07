@@ -1,1 +1,3 @@
 Just copy this file anywhere to a model folder and run 'cryengine_library_tool.py' to copy the models to your cryengine game folder.  You will recieve an error unless you change your cryengine game directory in 'configuration.py'!
+
+This file will be automatically deleted after the models are copied.

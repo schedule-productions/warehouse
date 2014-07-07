@@ -5,13 +5,15 @@ import shutil
 import configuration
 
 if os.path.exists(configuration.cryengineDirectory):
-    while True:
-        modelPath = input("Model path (ex. misc/octocat)\n :: ")
-        if os.path.exists(os.path.join("models", modelPath)):
-            break
-        else:
-            input("\nThere is no valid model at that location.\n")
+    for (dirpath, dirnames, filenames) in os.walk("models"):
+        if "mark_for_cryengine_draft.txt" in filenames:
+            retrieveTestModel(os.sep.join(dirpath.split(os.sep)[1:]))
 
+else:
+    input("\nCryengine directory is wrong!  Change it in 'configuration.py'.\n")
+
+def retrieveTestModel(modelPath):
+    
     testPath = os.path.join(configuration.cryengineDirectory, "objects", "_warehouse", "_test")
 
     if os.path.exists(os.path.join(testPath, modelPath)):
@@ -37,6 +39,3 @@ if os.path.exists(configuration.cryengineDirectory):
         
     else:
         input("\nNo test model at that location!\n")
-
-else:
-    input("\nCryengine directory is wrong!  Change it in 'configuration.py'.\n")
