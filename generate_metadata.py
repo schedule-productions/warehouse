@@ -48,14 +48,6 @@ modelPath = "models/" + "/".join(pathBlocks)
 
 cryengine = path.exists(path.join(modelPath, name+"_cryengine.blend"))
 
-#File format
-#------------
-#%name%Octocat
-#%dataname%octocat
-#%path%misc%octocat
-#%tags%misc%random%clutter%trophy%figure%toy
-#%attributes%cryengine#True
-
 attributes = {"cryengine" : str(cryengine)}
 
 def saveMetadata():
