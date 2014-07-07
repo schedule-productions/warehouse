@@ -17,7 +17,10 @@ Development Guideline
 8.	Adjust for CryBlend*
 9.	Export Cryengine files*
 10.	Use python to create metadata
-11.	Change material files to fit texture directory*
+11.	Send draft model using `cryengine_send_test_model.py`*
+12.	Finalize draft model in Cryengine SDK*
+13.	Retrieve draft model using `cryengine_retrieve_test_model.py`*
+14.	Replace with files from `_retrieve` folder and delete `_retrieve` folder*
 
 (*only necessary for models to use in Cryengine)
 
