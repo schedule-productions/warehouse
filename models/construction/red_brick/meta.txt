@@ -1,0 +1,5 @@
+%name%Red Brick
+%dataname%red_brick
+%path%construction%red_brick
+%tags%brick%construction%clutter%junk
+%attributes%cryengine#True
