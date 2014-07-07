@@ -9,7 +9,7 @@ Development Guideline
 
 1.	Model geometry
 2.	Save .blend and export .stl
-3.	Save textures to directory
+3.	If the model has unique textures, copy them to the model directory
 4.	Create UV map
 5.	Export .x
 6.	Blender render 500x500 image preview and save
