@@ -1,0 +1,5 @@
+%name%Red Brick Pile
+%dataname%red_brick_pile
+%path%construction%red_brick_pile
+%tags%brick%pile%bricks%construction%clutter%junk
+%attributes%cryengine#False
