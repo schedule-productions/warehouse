@@ -1,6 +1,25 @@
 #!/usr/bin/env python3
 
 from os import path
+import os
+
+noMetadataPaths = []
+for (dirpath, dirnames, filenames) in os.walk("models"):
+    hasSubfolders = False
+    for dirname in dirnames:
+        if dirname[0] != "_":
+            hasSubfolders = True
+    if "meta.txt" not in filenames and not hasSubfolders:
+        noMetadataPaths.append(os.sep.join(dirpath.split(os.sep)[1:]))
+
+if noMetadataPaths:
+    print("\nThe following models have no metadata:")
+    for ipath in noMetadataPaths:
+        print(ipath)
+else:
+    print("\nAll models in valid directories have metadata!")
+
+print("---------------------------------------------\n")
 
 name = None
 while True:
