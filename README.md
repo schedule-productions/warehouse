@@ -25,7 +25,7 @@ Finalizing and Testing Cryengine Models
 ----------------------------------------
 > After doing the steps above, do the following to finalize the model:  
 
-1.	Mark models to draft by copying `utilities/mark_for_cryengine_draft.txt` to model folders  
+1.	Mark models to draft by copying `utilities/mark-ce-draft.txt` to model folders  
 2.	Send draft models to game directory using `cryengine_send_draft_models.py`  
 3.	Finalize draft models in Cryengine SDK  
 4.	Retrieve draft models using `cryengine_retrieve_draft_models.py`  
@@ -58,7 +58,7 @@ Using Cryengine Models
 > `meta.txt` will say whether a given model is Cryengine compatible.
 
 1. Set your cryengine directory by editing `config.txt` and changing the appropriate variable.  
-2. Copy `utilities/mark_for_cryengine.txt` to any model folders that you want in your cryengine game directory.  
+2. Copy `utilities/mark-ce-import.txt` to any model folders that you want in your cryengine game directory.  
 3. Run `cryengine_library_tool.py` to copy all of the models over.
 
 
