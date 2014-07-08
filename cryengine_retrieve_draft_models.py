@@ -13,10 +13,10 @@ def retrieveTestModel(modelPath):
         if os.path.exists(retrieveDirectory):
             shutil.rmtree(retrieveDirectory)
         shutil.copytree(os.path.join(testPath, modelPath), retrieveDirectory)
-        os.remove(os.path.join(retrieveDirectory, "mark_for_cryengine_draft.txt"))
+        os.remove(os.path.join(retrieveDirectory, "mark-ce-draft.txt"))
         print("\nRetrieved finished draft model '%s' from Cryengine game directory!" % \
               (modelPath))
-        os.remove(os.path.join("models", modelPath, "mark_for_cryengine_draft.txt"))
+        os.remove(os.path.join("models", modelPath, "mark-ce-draft.txt"))
         
         materialFilename = os.path.join(retrieveDirectory, os.path.basename(modelPath) + ".mtl")
         if os.path.exists(materialFilename):
@@ -41,13 +41,13 @@ def retrieveTestModel(modelPath):
 once = False
 if os.path.exists(configuration.cryengineDirectory):
     for (dirpath, dirnames, filenames) in os.walk("models"):
-        if "mark_for_cryengine_draft.txt" in filenames:
+        if "mark-ce-draft.txt" in filenames:
             once = True
             retrieveTestModel(os.sep.join(dirpath.split(os.sep)[1:]))
 
     if not once:
         input("\nNo marks found.  Copy the mark " + \
-              "'utilities/mark_for_cryengine_draft.txt' to any " + \
+              "'utilities/mark-ce-draft.txt' to any " + \
               "model folder you wish to retrieve after testing.\n")
 
 else:

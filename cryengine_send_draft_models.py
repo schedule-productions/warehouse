@@ -20,13 +20,13 @@ def sendTestModel(modelPath):
 once = False
 if os.path.exists(configuration.cryengineDirectory):
     for (dirpath, dirnames, filenames) in os.walk("models"):
-        if "mark_for_cryengine_draft.txt" in filenames:
+        if "mark-ce-draft.txt" in filenames:
             once = True
             sendTestModel(os.sep.join(dirpath.split(os.sep)[1:]))
 
     if not once:
         input("\nNo marks found.  Copy the mark " + \
-              "'utilities/mark_for_cryengine_draft.txt' to any " + \
+              "'utilities/mark-ce-draft.txt' to any " + \
               "model folder you wish to test.\n")
 
 else:

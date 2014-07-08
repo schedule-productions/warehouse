@@ -11,7 +11,7 @@ def main():
     paths = []
 
     for (dirpath, dirnames, filenames) in os.walk("models"):
-        if "mark_for_cryengine.txt" in filenames:
+        if "mark-ce-import.txt" in filenames:
             paths.append(dirpath)
 
     gameDirectory = configuration.cryengineDirectory
@@ -19,7 +19,7 @@ def main():
     if os.path.exists(gameDirectory):
         if not paths:
             input("\nNo marks found.  Copy the mark " + \
-              "'utilities/mark_for_cryengine.txt' to any " + \
+              "'utilities/mark-ce-import.txt' to any " + \
               "model folder you wish to copy to the cryengine directory.\n")
         for modelpath in paths:
             copyModel(modelpath)
@@ -78,7 +78,7 @@ def copyModel(modelpath):
         if file.endswith(".dds") and file.startswith("texture_"):
             copyTexture(modelpath, file)
 
-    os.remove(os.path.join(modelpath, "mark_for_cryengine.txt"))
+    os.remove(os.path.join(modelpath, "mark-ce-import.txt"))
 
 if __name__ == "__main__":
     main()
