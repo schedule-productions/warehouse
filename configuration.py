@@ -2,6 +2,7 @@ from os import path
 
 #--------------------------------------------
 
+error = False
 try:
     exec(open("config.cfg", "r").read())
 except:
