@@ -15,7 +15,7 @@ def sendTestModel(modelPath):
 
     shutil.copytree(os.path.join("models", modelPath), os.path.join(testPath, modelPath))
 
-    input("\nCopied draft model '%s' to Cryengine!\n" % modelPath)
+    print("Copied draft model '%s' to Cryengine!" % modelPath)
 
 once = False
 if os.path.exists(configuration.cryengineDirectory):
@@ -28,8 +28,11 @@ if os.path.exists(configuration.cryengineDirectory):
         input("\nNo marks found.  Copy the mark " + \
               "'utilities/mark-ce-draft.txt' to any " + \
               "model folder you wish to test.\n")
+    else:
+        input("\nAll marks processed!\n")
 
 else:
     input("\nCryengine directory is wrong!  Change it in 'config.txt'.\n")
+
 
 

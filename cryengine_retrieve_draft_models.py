@@ -29,9 +29,9 @@ def retrieveTestModel(modelPath):
             materialFile.write(materialData)
             materialFile.close()
 
-            input(" -> Fixed material texture links.\n")
+            print(" -> Fixed material texture links.\n")
         else:
-            input(" -> Could not retrieve material file to fix.\n")
+            print(" -> Could not retrieve material file to fix.\n")
         
     else:
         input("\nNo test model at that location!\n")
@@ -49,6 +49,8 @@ if os.path.exists(configuration.cryengineDirectory):
         input("\nNo marks found.  Copy the mark " + \
               "'utilities/mark-ce-draft.txt' to any " + \
               "model folder you wish to retrieve after testing.\n")
+    else:
+        input("\nAll marked models retrieved!\n")
 
 else:
     input("\nCryengine directory is wrong!  Change it in 'config.txt'.\n")
