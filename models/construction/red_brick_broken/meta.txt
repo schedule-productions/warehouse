@@ -1,0 +1,5 @@
+%name%Broken Red Brick
+%dataname%red_brick_broken
+%path%construction%red_brick_broken
+%tags%brick%construction%clutter%junk%destroyed%broken%old%dust
+%attributes%cryengine#True
