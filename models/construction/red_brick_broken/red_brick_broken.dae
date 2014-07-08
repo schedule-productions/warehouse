@@ -12,48 +12,8 @@
   </asset>
   <library_cameras/>
   <library_lights/>
-  <library_images>
-    <image id="texture_brick.png" name="texture_brick.png">
-      <init_from>texture_brick.png</init_from>
-    </image>
-  </library_images>
+  <library_images/>
   <library_effects>
-    <effect id="red_brick_broken__2__proxy__physProxyNoDraw_fx">
-      <profile_COMMON>
-        <technique sid="common">
-          <phong>
-            <emission>
-              <color sid="emission">0.0 0.0 0.0 1.0</color>
-            </emission>
-            <ambient>
-              <color sid="ambient">1.0 1.0 1.0 1.0</color>
-            </ambient>
-            <diffuse>
-              <color sid="diffuse">0.800000011920929 0.800000011920929 0.800000011920929 1.0</color>
-            </diffuse>
-            <specular>
-              <color sid="specular">1.0 1.0 1.0 1.0</color>
-            </specular>
-            <shininess>
-              <float sid="shininess">50</float>
-            </shininess>
-            <index_of_refraction>
-              <float sid="index_of_refraction">1.0</float>
-            </index_of_refraction>
-          </phong>
-        </technique>
-        <extra>
-          <technique profile="GOOGLEEARTH">
-            <double_sided>1</double_sided>
-          </technique>
-        </extra>
-      </profile_COMMON>
-      <extra>
-        <technique profile="MAX3D">
-          <double_sided>1</double_sided>
-        </technique>
-      </extra>
-    </effect>
     <effect id="red_brick_broken__1__brick__physNone_fx">
       <profile_COMMON>
         <newparam sid="texture_brick.png-surface">
@@ -148,9 +108,6 @@
     </effect>
   </library_effects>
   <library_materials>
-    <material id="red_brick_broken__2__proxy__physProxyNoDraw" name="red_brick_broken__2__proxy__physProxyNoDraw">
-      <instance_effect url="#red_brick_broken__2__proxy__physProxyNoDraw_fx"/>
-    </material>
     <material id="red_brick_broken__1__brick__physNone" name="red_brick_broken__1__brick__physNone">
       <instance_effect url="#red_brick_broken__1__brick__physNone_fx"/>
     </material>
@@ -159,55 +116,6 @@
     </material>
   </library_materials>
   <library_geometries>
-    <geometry id="Proxy">
-      <mesh>
-        <source id="Proxy-positions">
-          <float_array count="24" id="Proxy-positions-array">-0.134223 -0.108709 -0.036588 -0.165667 0.0670858 -0.036588 0.154578 0.124367 -0.036588 0.186022 -0.0514279 -0.036588 -0.134223 -0.108709 0.036588 -0.165667 0.0670858 0.036588 0.154578 0.124367 0.036588 0.186022 -0.0514279 0.036588</float_array>
-          <technique_common>
-            <accessor count="8" source="#Proxy-positions-array" stride="3">
-              <param name="X" type="float"/>
-              <param name="Y" type="float"/>
-              <param name="Z" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <source id="Proxy-normals">
-          <float_array count="18" id="Proxy-normals-array">-0.984377 -0.176072 0.000000 -0.176072 0.984377 0.000000 0.984377 0.176072 0.000000 0.176072 -0.984377 0.000000 -0.000000 0.000000 -1.000000 -0.000000 0.000000 1.000000 </float_array>
-          <technique_common>
-            <accessor count="6" source="Proxy-normals-array" stride="3">
-              <param name="X" type="float"/>
-              <param name="Y" type="float"/>
-              <param name="Z" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <source id="Proxy-UVMap-0">
-          <float_array count="48" id="Proxy-UVMap-0-array">0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 1.000000 1.000000 0.000000 1.000000 </float_array>
-          <technique_common>
-            <accessor count="24" source="#Proxy-UVMap-0-array" stride="2">
-              <param name="S" type="float"/>
-              <param name="T" type="float"/>
-            </accessor>
-          </technique_common>
-        </source>
-        <source/>
-        <vertices id="Proxy-vertices">
-          <input semantic="POSITION" source="#Proxy-positions"/>
-        </vertices>
-        <polylist count="6" material="red_brick_broken__2__proxy__physProxyNoDraw">
-          <input offset="0" semantic="VERTEX" source="#Proxy-vertices"/>
-          <input offset="1" semantic="NORMAL" source="#Proxy-normals"/>
-          <input offset="2" semantic="TEXCOORD" set="0" source="#Proxy-UVMap-0"/>
-          <vcount>4 4 4 4 4 4 </vcount>
-          <p>1 0 0 0 0 1 4 0 2 5 0 3 5 1 4 6 1 5 2 1 6 1 1 7 6 2 8 7 2 9 3 2 10 2 2 11 0 3 12 3 3 13 7 3 14 4 3 15 0 4 16 1 4 17 2 4 18 3 4 19 7 5 20 6 5 21 5 5 22 4 5 23 </p>
-        </polylist>
-        <extra>
-          <technique profile="MAYA">
-            <double_sided>1</double_sided>
-          </technique>
-        </extra>
-      </mesh>
-    </geometry>
     <geometry id="DustPile">
       <mesh>
         <source id="DustPile-positions">
@@ -313,27 +221,6 @@
   <library_visual_scenes>
     <visual_scene id="scene" name="scene">
       <node id="CryExportNode_red_brick_broken">
-        <node id="Proxy">
-          <translate sid="translation">0.0000 0.0000 0.0000</translate>
-          <rotate sid="rotation_Z">0 0 1 0.0</rotate>
-          <rotate sid="rotation_Y">0 1 0 0.0</rotate>
-          <rotate sid="rotation_X">1 0 0 0.0</rotate>
-          <scale sid="scale">1.0 1.0 1.0</scale>
-          <instance_geometry url="#Proxy">
-            <bind_material>
-              <technique_common>
-                <instance_material symbol="red_brick_broken__2__proxy__physProxyNoDraw" target="#red_brick_broken__2__proxy__physProxyNoDraw">
-                  <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="UVMap"/>
-                </instance_material>
-              </technique_common>
-            </bind_material>
-          </instance_geometry>
-          <extra>
-            <technique profile="CryEngine">
-              <properties/>
-            </technique>
-          </extra>
-        </node>
         <node id="DustPile">
           <translate sid="translation">0.0000 0.0000 0.0000</translate>
           <rotate sid="rotation_Z">0 0 1 0.0</rotate>
