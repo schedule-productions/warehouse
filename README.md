@@ -8,15 +8,17 @@ Development Guideline
 -----------------------
 
 1.	Model geometry
-2.	Save .blend and export .stl
-3.	If the model has unique textures, copy them to the model directory
-4.	Create UV map
-5.	Export .x
-6.	Blender render 500x500 image preview and save
-7.	Save .blend copy*
-8.	Adjust for CryBlend*
-9.	Export Cryengine files*
-10.	Use python to create metadata
+2.	Scale model to the Blender unit size.
+3.	Export .stl
+4.	Scale back appropriately for game use.
+5.	If the model has unique textures, copy them to the model directory
+6.	Create UV map
+7.	Export .x
+8.	Blender render 500x500 image preview and save
+9.	Save .blend copy*
+10.	Adjust for CryBlend*
+11.	Export Cryengine files*
+12.	Use python to create metadata
 
 (*only necessary for models to use in Cryengine)
 
