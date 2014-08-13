@@ -35,9 +35,17 @@ class WindowMain(Window):
 class WindowMetadata(Window):
     def __init__(self, pathName):
         wpf.LoadComponent(self, "metadata.xaml")
+
+        pathName = pathName.ToString()
         
         self.Title = "Edit Metadata - " + pathName
-        self.labelPathName
+        self.textPathName.Text = pathName
+
+        self.sPathName = pathName
+
+        file = open("test.txt", "w")
+        file.write(self.sPathName)
+        file.close()
 
 if __name__ == '__main__':
     app.Run(WindowMain())
