@@ -7,6 +7,8 @@ from os import path
 
 app = Application()
 
+import warehouse_manager_metadata
+
 class WindowMain(Window):
     def __init__(self):
         wpf.LoadComponent(self, "warehouse_manager_src.xaml")
@@ -29,23 +31,10 @@ class WindowMain(Window):
 
     def popupWindowMetadata(self):
         pathName = self.listMetadata.SelectedItem.ToString()
-        newDialog = WindowMetadata(pathName)
+        newDialog = warehouse_manager_metadata.WindowMetadata(pathName)
         newDialog.ShowDialog()
 
-class WindowMetadata(Window):
-    def __init__(self, pathName):
-        wpf.LoadComponent(self, "metadata.xaml")
 
-        pathName = pathName.ToString()
-        
-        self.Title = "Edit Metadata - " + pathName
-        self.textPathName.Text = pathName
-
-        self.sPathName = pathName
-
-        file = open("test.txt", "w")
-        file.write(self.sPathName)
-        file.close()
 
 if __name__ == '__main__':
     app.Run(WindowMain())

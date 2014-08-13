@@ -26,10 +26,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="warehouse_manager_metadata.py" />
     <Compile Include="warehouse_manager_src.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="metadata.xaml" />
+    <Content Include="warehouse_manager_metadata.xaml" />
     <Content Include="warehouse_manager_src.xaml">
       <SubType>Designer</SubType>
     </Content>
