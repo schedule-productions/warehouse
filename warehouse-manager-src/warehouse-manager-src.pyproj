@@ -30,7 +30,6 @@
     <Compile Include="warehouse_manager_src.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="metadata.xaml" />
     <Content Include="warehouse_manager_metadata.xaml" />
     <Content Include="warehouse_manager_src.xaml">
       <SubType>Designer</SubType>

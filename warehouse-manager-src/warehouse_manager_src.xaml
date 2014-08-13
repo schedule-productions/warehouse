@@ -13,7 +13,8 @@
             <TabItem Header="Metadata">
                 <Grid Background="White">
                     <ListBox x:Name="listMetadata" HorizontalAlignment="Left" Height="395" Margin="10,10,0,0" VerticalAlignment="Top" Width="535" SelectionChanged="MetadataChecklist_SelectionChanged"/>
-                    <Button x:Name="buttonMetadataCreate" Content="Create Metadata" HorizontalAlignment="Left" Margin="10,410,0,0" VerticalAlignment="Top" Width="535" Height="33" IsDefault="True" IsEnabled="False" Click="buttonMetadataCreate_Click"/>
+                    <Button x:Name="buttonMetadataCreate" Content="Create Metadata" HorizontalAlignment="Left" Margin="280,410,0,0" VerticalAlignment="Top" Width="265" Height="33" IsDefault="True" IsEnabled="False" Click="buttonMetadataCreate_Click"/>
+                    <Button x:Name="buttonMetadataRefresh" Content="Refresh" HorizontalAlignment="Left" Margin="10,410,0,0" VerticalAlignment="Top" Width="265" Height="33" Click="buttonMetadataRefresh_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Drafting">
