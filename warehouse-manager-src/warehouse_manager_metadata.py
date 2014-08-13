@@ -23,7 +23,10 @@ class WindowMetadata(Window):
         self.textPathName.Text = pathName
 
         self.sPathName = pathName
-        self.sModelPath = path.join("..", "models", pathName)
+        if path.exists("models"):
+            self.sModelPath = path.join("models", pathName)
+        else:
+            self.sModelPath = path.join("..", "models", pathName)
         self.sAttributes = {}
         self.sName = self.sPathName.split(path.sep)[-1]
 
