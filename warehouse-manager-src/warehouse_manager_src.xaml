@@ -1,0 +1,27 @@
+﻿<Window 
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+       Title="Warehouse Manager" Height="516" Width="574">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+        <TabControl HorizontalAlignment="Left" Height="466" VerticalAlignment="Top" Width="546" Margin="10,10,0,0">
+            <TabControl.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF5A9BDC" Offset="0.3"/>
+                </LinearGradientBrush>
+            </TabControl.Background>
+            <TabItem Header="Metadata">
+                <Grid Background="White">
+                    <ListBox x:Name="listMetadata" HorizontalAlignment="Left" Height="378" Margin="10,10,0,0" VerticalAlignment="Top" Width="516" SelectionChanged="MetadataChecklist_SelectionChanged"/>
+                    <Button x:Name="buttonMetadataCreate" Content="Create Metadata" HorizontalAlignment="Left" Margin="10,393,0,0" VerticalAlignment="Top" Width="526" Height="33" IsDefault="True" IsEnabled="False" Click="buttonMetadataCreate_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Drafting">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Finalization">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window> 
