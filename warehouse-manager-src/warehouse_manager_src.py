@@ -35,6 +35,7 @@ class WindowMain(Window):
     
     def buttonMetadataCreate_Click(self, sender, e):
         self.popupWindowMetadata()
+        self.buttonMetadataCreate.IsEnabled = False
 
     def popupWindowMetadata(self):
         pathName = self.listMetadata.SelectedItem.ToString()

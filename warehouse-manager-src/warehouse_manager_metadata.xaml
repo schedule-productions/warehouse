@@ -18,11 +18,11 @@
         <TextBox x:Name="entryNewTag" HorizontalAlignment="Left" Height="23" Margin="10,361,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Grid.ColumnSpan="2" GotFocus="entryNewTag_GotFocus" TextChanged="entryNewTag_TextChanged"/>
         <Image x:Name="imagePreview" Grid.Column="1" HorizontalAlignment="Left" Height="231" Margin="195,94,0,0" VerticalAlignment="Top" Width="227"/>
         <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
-        <Button x:Name="buttonTagAppend" Grid.ColumnSpan="2" Content="Append" HorizontalAlignment="Left" Height="23" Margin="10,389,0,0" VerticalAlignment="Top" Width="115" Click="buttonTagAppend_Click" IsDefault="True" IsEnabled="False" ToolTip="Add new tag to tag list"/>
-        <Button x:Name="buttonTagRemove" Content="_Remove" HorizontalAlignment="Left" Height="23" Margin="60,389,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1" Click="buttonTagRemove_Click" ToolTip="Remove selected tag" IsEnabled="False" RenderTransformOrigin="0.542,2.652"/>
+        <Button x:Name="buttonTagAppend" Content="Append" HorizontalAlignment="Left" Height="23" Margin="10,389,0,0" VerticalAlignment="Top" Width="78" Click="buttonTagAppend_Click" IsDefault="True" IsEnabled="False" ToolTip="Add new tag to tag list" Grid.ColumnSpan="2"/>
+        <Button x:Name="buttonTagRemove" Content="_Remove" HorizontalAlignment="Left" Height="23" Margin="11,389,0,0" VerticalAlignment="Top" Width="80" Grid.Column="1" Click="buttonTagRemove_Click" ToolTip="Remove selected tag" IsEnabled="False" RenderTransformOrigin="0.542,2.652"/>
         <TextBlock x:Name="textCryEngine" Grid.Column="1" HorizontalAlignment="Left" Height="39" Margin="195,343,0,0" TextWrapping="Wrap" Text="This model is not designed with CryEngine compatibility." VerticalAlignment="Top" Width="235" FontStyle="Italic" Foreground="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
-        <Button x:Name="buttonConfirm" Content="Confirm" Grid.Column="1" HorizontalAlignment="Left" Height="28" Margin="195,384,0,0" VerticalAlignment="Top" Width="113" IsEnabled="False" IsDefault="True" Click="buttonConfirm_Click" ToolTip="Confirm and save metadata"/>
-        <Button x:Name="buttonCancel" Content="Cancel" Grid.Column="1" HorizontalAlignment="Left" Height="28" Margin="313,384,0,0" VerticalAlignment="Top" Width="117" IsCancel="True" ToolTip="Discard all changes"/>
+        <Button x:Name="buttonConfirm" Content="Confirm" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="257,389,0,0" VerticalAlignment="Top" Width="80" IsEnabled="False" IsDefault="True" Click="buttonConfirm_Click" ToolTip="Confirm and save metadata"/>
+        <Button x:Name="buttonCancel" Content="Cancel" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="342,389,0,0" VerticalAlignment="Top" Width="80" IsCancel="True" ToolTip="Discard all changes"/>
 
     </Grid>
 </Window>
