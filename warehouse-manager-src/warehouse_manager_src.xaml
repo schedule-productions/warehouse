@@ -12,16 +12,17 @@
             </TabControl.Background>
             <TabItem Header="Metadata">
                 <Grid Background="White">
-                    <ListBox x:Name="listMetadata" HorizontalAlignment="Left" Height="383" Margin="10,10,0,0" VerticalAlignment="Top" Width="510" SelectionChanged="MetadataChecklist_SelectionChanged"/>
-                    <Button x:Name="buttonMetadataCreate" Content="_Create Metadata" HorizontalAlignment="Left" Margin="360,403,0,0" VerticalAlignment="Top" Width="160" Height="23" IsDefault="True" IsEnabled="False" Click="buttonMetadataCreate_Click"/>
-                    <Button x:Name="buttonMetadataRefresh" Content="_Refresh" HorizontalAlignment="Left" Margin="275,403,0,0" VerticalAlignment="Top" Width="80" Height="25" Click="buttonMetadataRefresh_Click"/>
+                    <ListBox x:Name="listMetadata" HorizontalAlignment="Left" Height="378" Margin="10,10,0,0" VerticalAlignment="Top" Width="510" SelectionChanged="MetadataChecklist_SelectionChanged"/>
+                    <Button x:Name="buttonMetadataCreate" Content="_Create Metadata" HorizontalAlignment="Left" Margin="360,403,0,0" VerticalAlignment="Top" Width="160" Height="25" IsDefault="True" IsEnabled="False" Click="buttonMetadataCreate_Click"/>
+                    <Button x:Name="buttonMetadataRefresh" Content="_Refresh" HorizontalAlignment="Left" Margin="10,403,0,0" VerticalAlignment="Top" Width="80" Height="25" Click="buttonMetadataRefresh_Click"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Drafting">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
-            <TabItem Header="Finalization">
-                <Grid Background="#FFE5E5E5"/>
+            <TabItem Header="CryEngine Process">
+                <Grid Background="#FFE5E5E5">
+                    <TreeView x:Name="treeCEP" HorizontalAlignment="Left" Height="378" Margin="10,10,0,0" VerticalAlignment="Top" Width="355"/>
+                    <Button x:Name="buttonCEPRefresh" Content="Button" HorizontalAlignment="Left" Height="25" Margin="10,403,0,0" VerticalAlignment="Top" Width="80"/>
+                    <Image x:Name="imageCEPPreview" HorizontalAlignment="Left" Height="150" Margin="380,10,0,0" VerticalAlignment="Top" Width="150"/>
+                </Grid>
             </TabItem>
         </TabControl>
     </Grid>
