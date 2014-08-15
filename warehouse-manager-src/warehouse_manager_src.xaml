@@ -1,6 +1,7 @@
 ﻿<Window 
        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" 
        Title="Warehouse Manager" Height="515" Width="573" ResizeMode="CanMinimize">
     <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Margin="0,0,-1,-3">
         <TabControl HorizontalAlignment="Left" Height="470" VerticalAlignment="Top" Width="550" Margin="10,10,-12,-10">
@@ -18,9 +19,9 @@
                 </Grid>
             </TabItem>
             <TabItem Header="CryEngine Process">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="White">
                     <TreeView x:Name="treeCEP" HorizontalAlignment="Left" Height="378" Margin="10,10,0,0" VerticalAlignment="Top" Width="355"/>
-                    <Button x:Name="buttonCEPRefresh" Content="Button" HorizontalAlignment="Left" Height="25" Margin="10,403,0,0" VerticalAlignment="Top" Width="80"/>
+                    <Button x:Name="buttonCEPRefresh" Content="Refresh" HorizontalAlignment="Left" Height="25" Margin="10,403,0,0" VerticalAlignment="Top" Width="80"/>
                     <Image x:Name="imageCEPPreview" HorizontalAlignment="Left" Height="150" Margin="380,10,0,0" VerticalAlignment="Top" Width="150"/>
                 </Grid>
             </TabItem>
