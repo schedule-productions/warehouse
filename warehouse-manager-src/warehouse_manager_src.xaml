@@ -20,9 +20,12 @@
             </TabItem>
             <TabItem Header="CryEngine Process">
                 <Grid Background="White">
-                    <TreeView x:Name="treeCEP" HorizontalAlignment="Left" Height="378" Margin="10,10,0,0" VerticalAlignment="Top" Width="355"/>
-                    <Button x:Name="buttonCEPRefresh" Content="Refresh" HorizontalAlignment="Left" Height="25" Margin="10,403,0,0" VerticalAlignment="Top" Width="80"/>
-                    <Image x:Name="imageCEPPreview" HorizontalAlignment="Left" Height="150" Margin="380,10,0,0" VerticalAlignment="Top" Width="150"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="17*"/>
+                    </Grid.ColumnDefinitions>
+                    <TreeView x:Name="treeCEP" HorizontalAlignment="Left" Height="378" Margin="10,10,0,0" VerticalAlignment="Top" Width="355" Grid.ColumnSpan="2"/>
+                    <Image x:Name="imageCEPPreview" HorizontalAlignment="Left" Height="150" Margin="350,10,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
                 </Grid>
             </TabItem>
         </TabControl>

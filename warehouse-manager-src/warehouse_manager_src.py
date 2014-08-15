@@ -7,6 +7,7 @@ from os import path
 from traceback import format_exc
 
 from System.Windows import *
+from System.Windows.Controls import *
 
 app = Application()
 
@@ -17,6 +18,7 @@ class WindowMain(Window):
         wpf.LoadComponent(self, "warehouse_manager_src.xaml")
 
         self.refreshMetadata()
+        self.refreshCEPTree()
 
     def refreshMetadata(self):
         self.listMetadata.Items.Clear()
@@ -45,8 +47,62 @@ class WindowMain(Window):
     
     def buttonMetadataRefresh_Click(self, sender, e):
         self.refreshMetadata()
+        self.refreshCEPTree()
 
+    def _CEPTreeTemplate(self):
+        #private DataTemplate GetHeaderTemplate()
+        # {
+        #    //create the data template
+        #    DataTemplate dataTemplate = new DataTemplate();
 
+        #    //create stack pane;
+        #    FrameworkElementFactory stackPanel = new FrameworkElementFactory(typeof(StackPanel));
+        #    stackPanel.Name = "parentStackpanel";
+        #    stackPanel.SetValue(StackPanel.OrientationProperty, Orientation.Horizontal);
+
+        #    // Create check box
+        #    FrameworkElementFactory checkBox = new FrameworkElementFactory(typeof(CheckBox));
+        #    checkBox.Name = "chk";
+        #    checkBox.SetValue(CheckBox.NameProperty, "chk");
+        #    checkBox.SetValue(CheckBox.TagProperty , new Binding());
+        #    checkBox.SetValue(CheckBox.MarginProperty, new Thickness(2));
+        #    stackPanel.AppendChild(checkBox);
+
+        #    // Create Image 
+        #    FrameworkElementFactory image = new FrameworkElementFactory(typeof(Image));
+        #    image.SetValue(Image.MarginProperty, new Thickness(2));
+        #    image.SetBinding(Image.SourceProperty, new Binding() 
+        #  { Converter = new CustomImagePathConverter() });
+        #    stackPanel.AppendChild(image);
+
+        #    // create text
+        #    FrameworkElementFactory label = new FrameworkElementFactory(typeof(TextBlock));
+        #    label.SetBinding(TextBlock.TextProperty, new Binding());
+        #    label.SetValue(TextBlock.ToolTipProperty, new Binding());          
+        #    stackPanel.AppendChild(label);
+
+          
+        #    //set the visual tree of the data template
+        #    dataTemplate.VisualTree = stackPanel;
+
+        #    return dataTemplate;
+        # } 
+        pass
+
+    def refreshCEPTree(self):
+        self.treeCEP
+
+        e = TreeViewItem()
+        e.Header = "Hello"
+        self.treeCEP.Items.Add(e)
+
+        ee = TreeViewItem()
+        ee.Header = "World"
+
+        e.Items.Add
+        e.Items.Add(ee)
+
+        
 
 if __name__ == '__main__':
     try:
