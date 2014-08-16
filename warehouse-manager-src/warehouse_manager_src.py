@@ -17,8 +17,13 @@ class WindowMain(Window):
     def __init__(self):
         wpf.LoadComponent(self, "warehouse_manager_src.xaml")
 
+        if path.exists("models"):
+            self.sModelPath = path.join("models", pathName)
+        else:
+            self.sModelPath = path.join("..", "models", pathName)
+
         self.refreshMetadata()
-        self.refreshCEPTree()
+        self.processRefresh()
 
     def refreshMetadata(self):
         self.listMetadata.Items.Clear()
@@ -47,7 +52,7 @@ class WindowMain(Window):
     
     def buttonMetadataRefresh_Click(self, sender, e):
         self.refreshMetadata()
-        self.refreshCEPTree()
+        self.processRefresh()
 
     def _CEPTreeTemplate(self):
         #private DataTemplate GetHeaderTemplate()
@@ -88,21 +93,6 @@ class WindowMain(Window):
         #    return dataTemplate;
         # } 
         pass
-
-    def refreshCEPTree(self):
-        self.treeCEP
-
-        e = TreeViewItem()
-        e.Header = "Hello"
-        self.treeCEP.Items.Add(e)
-
-        ee = TreeViewItem()
-        ee.Header = "World"
-
-        e.Items.Add
-        e.Items.Add(ee)
-
-        
 
 if __name__ == '__main__':
     try:

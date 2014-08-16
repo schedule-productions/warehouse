@@ -18,13 +18,13 @@
                     <Button x:Name="buttonMetadataRefresh" Content="_Refresh" HorizontalAlignment="Left" Margin="10,403,0,0" VerticalAlignment="Top" Width="80" Height="25" Click="buttonMetadataRefresh_Click"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="CryEngine Process">
+            <TabItem Header="Process">
                 <Grid Background="White">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition Width="17*"/>
                     </Grid.ColumnDefinitions>
-                    <TreeView x:Name="treeCEP" HorizontalAlignment="Left" Height="378" Margin="10,10,0,0" VerticalAlignment="Top" Width="355" Grid.ColumnSpan="2"/>
+                    <TreeView x:Name="treeProcess" HorizontalAlignment="Left" Height="378" Margin="10,10,0,0" VerticalAlignment="Top" Width="355" Grid.ColumnSpan="2"/>
                     <Image x:Name="imageCEPPreview" HorizontalAlignment="Left" Height="150" Margin="350,10,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1"/>
                 </Grid>
             </TabItem>
